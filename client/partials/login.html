@@ -1,0 +1,7 @@
+<div ng-controller="loginController as login">
+	<form>
+		<label>Email: <input ng-model="login.user.email" type="text"></label>
+		<label>Password: <input ng-model="login.user.password" type="password"></label>
+		<input type="submit" ng-click="login.login()">
+	</form>
+</div>
