@@ -1,4 +1,4 @@
-BrokenGlass.factory('loginFactory', function($http){
+brokenGlass.factory('loginFactory', function($http){
 	
 	var factory = {};
 

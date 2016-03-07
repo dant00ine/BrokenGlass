@@ -6,19 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
-	<script type="text/javascript">
-		var brokenGlass = angular.module('brokenGlass', ['ngRoute']);
+	<script type="text/javascript" src="../node_modules/angular-resource/angular-resource.js">
+		console.log('Angular Resource dump:'+ )
 	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
+	<script type="text/javascript" src="./javascripts/angular-app.js"></script>
+
 </head>
 <body>
 	<div>
-		<a href="#/">First Link</a> |
-		<a href="#/">Second Link</a>
+		<a href="#/login">login</a> |
+		<a href="#/admin">admin</a> |
+		<a href="#/home">home</a>
 	</div>
-
-	<div class="container" ng-view="">
-		
-	</div>
+	{{message}}
+	<ng-view></ng-view>
 </body>
 </html>
